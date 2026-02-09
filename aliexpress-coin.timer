@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for docker-backup.service
+
+[Timer]
+# Runs in the US/Pacific time zone, usually 17:00 JST, 16:00 JST during daylight saving time
+OnCalendar=*-*-* 00:00:00 America/Los_Angeles
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

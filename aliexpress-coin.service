@@ -1,0 +1,10 @@
+[Unit]
+Description=Aliexpress Coin Bot
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/sh /var/aliexpress-coin/aliexpress-coin.sh
+
+[Install]
+WantedBy=multi-user.target
